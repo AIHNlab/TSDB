@@ -21,6 +21,8 @@ from .loading_funcs import (
     load_italy_air_quality,
     load_pems_traffic,
     load_solar_alabama,
+    load_isphyncs_biometrics,
+    load_blood_glucose_ohio,
 )
 from .utils.downloading import download_and_extract
 from .utils.file import purge_path, pickle_load, pickle_dump, determine_data_home
@@ -111,6 +113,12 @@ def load(dataset_name: str, use_cache: bool = True) -> dict:
                 result = load_pems_traffic(dataset_saving_path)
             elif dataset_name == "solar_alabama":
                 result = load_solar_alabama(dataset_saving_path)
+            elif dataset_name == "isphyncs_biometrics":
+                result = load_isphyncs_biometrics(dataset_saving_path)
+            elif dataset_name == "blood_glucose_ohio_2018":
+                result = load_blood_glucose_ohio(dataset_saving_path)
+            elif dataset_name == "blood_glucose_ohio_2020":
+                result = load_blood_glucose_ohio(dataset_saving_path)
             elif "ucr_uea_" in dataset_name:
                 actual_dataset_name = dataset_name.replace(
                     "ucr_uea_", ""

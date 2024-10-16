@@ -49,6 +49,9 @@ _DATABASE = {
     # https://www.nrel.gov/grid/solar-power-data.html, https://github.com/laiguokun/multivariate-time-series-data
     "solar_alabama": "https://raw.githubusercontent.com/laiguokun/multivariate-time-series-data/master/"
     "solar-energy/solar_AL.txt.gz",
+    "isphyncs_biometrics": -1, # private dataset
+    "blood_glucose_ohio_2018": -1, # private dataset ?? #Todo: verify
+    "blood_glucose_ohio_2020": -1, # private dataset ?? #Todo: verify
 }
 
 

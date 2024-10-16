@@ -124,6 +124,8 @@ def download_and_extract(dataset_name: str, dataset_saving_path: str) -> None:
         The local path for dataset saving.
 
     """
+    if dataset_name == "isphyncs_ftb":
+        raise ValueError("Did not find dataset isphyncs_ftb on local drive. The dataset is private and cannot be downloaded. Ask the owner for access.")
     logger.info("Start downloading...")
     os.makedirs(dataset_saving_path)
     if isinstance(DATABASE[dataset_name], list):
