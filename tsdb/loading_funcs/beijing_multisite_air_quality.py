@@ -41,5 +41,6 @@ def load_beijing_air_quality(local_path):
     df = pd.concat(df_collector, axis=0)
     data = {
         "X": df,
+        "main_freq": 24,
     }
     return data

@@ -46,5 +46,6 @@ def load_solar_alabama(local_path):
 
     data = {
         "X": df,
+        "main_freq": 144
     }
     return data

@@ -33,7 +33,8 @@ def load_isphyncs_biometrics(local_path):
     test_df  = load_files(local_path, "testing")
     data = {
         "train_X": train_df,
-        "test_X": test_df
+        "test_X": test_df,
+        "main_freq": 1440
     }
     return data
 

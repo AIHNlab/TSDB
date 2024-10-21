@@ -34,5 +34,6 @@ def load_electricity(local_path):
     df.index = pd.to_datetime(df.index)
     data = {
         "X": df,
+        "main_freq": 96,
     }
     return data

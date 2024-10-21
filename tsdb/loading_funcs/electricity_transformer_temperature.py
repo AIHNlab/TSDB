@@ -50,5 +50,6 @@ def load_ett(local_path):
         df.index = pd.to_datetime(df.index)
         df_name = sub_set.split(".csv")[0]
         data[df_name] = df
+    data['main_freq'] = 96
 
     return data

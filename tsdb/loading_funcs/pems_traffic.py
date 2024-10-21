@@ -44,5 +44,6 @@ def load_pems_traffic(local_path):
 
     data = {
         "X": df,
+        "main_freq": 24
     }
     return data

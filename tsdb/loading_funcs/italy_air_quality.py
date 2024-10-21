@@ -37,5 +37,6 @@ def load_italy_air_quality(local_path):
 
     data = {
         "X": df,
+        "main_freq": 24,
     }
     return data
